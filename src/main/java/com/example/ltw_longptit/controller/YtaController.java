@@ -35,18 +35,18 @@ public class YtaController {
         System.out.println(yta.getYtaTen());
         return ytaRepository.save(yta);
     }
-    //what the fuck
     @PutMapping("/{id}")
     public Yta updateYta(@RequestBody Yta yta,@PathVariable("id") int id) {
-        Yta yta1 = ytaRepository.getById(id);
-        yta1.setYtaTen(yta.getYtaTen());
-        yta1.setYtaDiaChi(yta.getYtaDiaChi());
-        yta1.setYtaSDT(yta.getYtaSDT());
-        yta1.setYtaThamNien(yta.getYtaThamNien());
-        yta1.setId(id);
-        yta1.setYtaNgaySinh(yta.getYtaNgaySinh());
-        yta1.setYtaCMT(yta.getYtaCMT());
-        return ytaRepository.save(yta1);
+//        Yta yta1 = ytaRepository.getById(id);
+//        yta1.setYtaTen(yta.getYtaTen());
+//        yta1.setYtaDiaChi(yta.getYtaDiaChi());
+//        yta1.setYtaSDT(yta.getYtaSDT());
+//        yta1.setYtaThamNien(yta.getYtaThamNien());
+//        yta1.setId(id);
+//        yta1.setYtaNgaySinh(yta.getYtaNgaySinh());
+//        yta1.setYtaCMT(yta.getYtaCMT());
+//        return ytaRepository.save(yta1);
+        return ytaRepository.save(yta);
     }
 
     @DeleteMapping("/{id}")
