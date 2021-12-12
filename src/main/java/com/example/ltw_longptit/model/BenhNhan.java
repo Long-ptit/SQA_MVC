@@ -20,5 +20,5 @@ public class BenhNhan {
     private String ten;
     private String ngaySinh;
     private String diaChi;
-
+    private String sdt;
 }
