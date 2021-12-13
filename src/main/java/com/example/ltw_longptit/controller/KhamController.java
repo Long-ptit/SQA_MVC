@@ -124,7 +124,6 @@ public class KhamController {
         return khamRepository.getAllKhamByThang(keyword);
     }
 
-    //@GetMapping("/tk/benhnhan/{keyword}/{id}")
     public List<Kham> getKhamByBenhNhan(String keyword ,String id) {
         ArrayList<Kham> listKham = (ArrayList<Kham>) khamRepository.getAllKhamByBenhNhan(keyword, id);
         // lấy ra ds khám trong tháng theo id bệnh nhân
@@ -134,8 +133,6 @@ public class KhamController {
             String status =  listKham.get(i).getStatus();
             String status1 =  listKham.get(i+1).getStatus();
 
-//            if( listKham.get(i).getBacSy().getId() != listKham.get(i+1).getBacSy().getId() ) {
-//                continue;
 //            }
             //lọc các bênh giống nhaui liên tiếp
             if(status.equals("bình thường") && status1.equals("mắc bệnh") && maBenh == maBenh1 ) {

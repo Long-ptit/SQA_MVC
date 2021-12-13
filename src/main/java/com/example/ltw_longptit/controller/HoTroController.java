@@ -15,7 +15,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(path = "/hotro", produces = "application/json")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*")//cho phép gọi api từ máy chủ khác localhost
 public class HoTroController {
     @Autowired
     private HoTroRepository hoTroRepository;

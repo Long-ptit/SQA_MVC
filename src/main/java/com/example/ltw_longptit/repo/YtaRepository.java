@@ -9,6 +9,6 @@ import java.util.List;
 
 public interface YtaRepository extends JpaRepository<Yta, Integer> {
 
-    @Query(value = "SELECT yta from Yta yta where yta.ytaTen like %:keyword%")
+    @Query(value = "SELECT * from yta where yta_ten like %:keyword%", nativeQuery = true)
     public List<Yta> searchYta( String keyword);
 }

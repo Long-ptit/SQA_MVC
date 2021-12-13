@@ -9,15 +9,17 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 
-@RestController
-@RequestMapping(path = "/yta", produces = "application/json")
-@CrossOrigin(origins = "*")
+@RestController// controller + responbody
+@RequestMapping(path = "/yta", produces = "application/json")// anh xa http request
+@CrossOrigin(origins = "*")// cho phép gọi api khác máy chủ localhost
 public class YtaController {
+
     @Autowired
     private YtaRepository ytaRepository;
 
     @GetMapping
     public Iterable<Yta> getAllYta() {
+
         return ytaRepository.findAll();
     }
 
@@ -35,17 +37,8 @@ public class YtaController {
         System.out.println(yta.getYtaTen());
         return ytaRepository.save(yta);
     }
-    @PutMapping("/{id}")
-    public Yta updateYta(@RequestBody Yta yta,@PathVariable("id") int id) {
-//        Yta yta1 = ytaRepository.getById(id);
-//        yta1.setYtaTen(yta.getYtaTen());
-//        yta1.setYtaDiaChi(yta.getYtaDiaChi());
-//        yta1.setYtaSDT(yta.getYtaSDT());
-//        yta1.setYtaThamNien(yta.getYtaThamNien());
-//        yta1.setId(id);
-//        yta1.setYtaNgaySinh(yta.getYtaNgaySinh());
-//        yta1.setYtaCMT(yta.getYtaCMT());
-//        return ytaRepository.save(yta1);
+    @PutMapping()
+    public Yta updateYta(@RequestBody Yta yta) {
         return ytaRepository.save(yta);
     }
 
@@ -58,10 +51,4 @@ public class YtaController {
     public Iterable<Yta> searchNurse(@PathVariable("keyword") String keyword) {
         return ytaRepository.searchYta(keyword);
     }
-
-
-
-
-
-
 }
