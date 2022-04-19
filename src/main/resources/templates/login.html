@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>Đăng nhập</title>
+<style>
+input[type=text] {
+  width: 250px;
+  transition: ease-in-out, width .35s ease-in-out;
+}
+
+input[type=password] {
+  width: 250px;
+  transition: ease-in-out, width .35s ease-in-out;
+}
+</style>
+</head>
+
+<body>
+    <div align="center">
+    	<h1>Quản lý cửa hàng</h1>
+        <form action="#" th:action="@{/}" th:object="${nhanvien}"
+            method="post">
+ 
+            <table border="0" cellpadding="10">
+            	
+                <tr>
+                    <td>Tên đăng nhập :</td>
+                    <td>
+                        <input type="text" th:field="*{tenDangNhap}" autofocus/>
+                    </td>
+                    <td>
+                        <div style="color: red" th:if="${#fields.hasErrors('tenDangNhap')}" th:errors="*{tenDangNhap}"></div>
+                    </td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>Mật khẩu:</td>
+                    <td><input type="password" th:field="*{matKhau}" /></td>
+                    <td>
+                        <div style="color: red" th:if="${#fields.hasErrors('matKhau')}" th:errors="*{matKhau}"></div>
+                    </td>
+                </tr>
+                                        
+                <tr>
+                	<td></td>
+                	<td><button type="submit">Đăng nhập</button> </td> 
+                </tr>
+                
+                <tr>
+                	<td>
+                	</td>
+
+                    <td>
+                    </td>
+                </tr>
+                
+            </table>
+        </form>
+        
+    </div>
+    
+    
+</body>
+</html>

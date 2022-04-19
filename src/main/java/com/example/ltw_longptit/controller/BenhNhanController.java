@@ -4,11 +4,12 @@ package com.example.ltw_longptit.controller;
 import com.example.ltw_longptit.model.BenhNhan;
 import com.example.ltw_longptit.repo.BenhNhanRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
-@RestController
+@Controller
 @RequestMapping(path = "/benhnhan", produces = "application/json")
 @CrossOrigin(origins = "*")
 public class BenhNhanController {
@@ -21,13 +22,9 @@ public class BenhNhanController {
         return benhNhanRepo.findAll();
     }
 
-    @GetMapping("/{id}")
-    public BenhNhan getBenhNhanById(@PathVariable("id") int id) {
-        Optional<BenhNhan> benhNhan = benhNhanRepo.findById(id);
-        if (benhNhan.isPresent()) {
-            return benhNhan.get();
-        }
-        return null;
+    @GetMapping("/")
+    public String getBenhNhanById() {
+        return "/sqa/register";
     }
     @PostMapping(consumes = "application/json")
     public BenhNhan createBenhNhan(@RequestBody BenhNhan benhNhan) {

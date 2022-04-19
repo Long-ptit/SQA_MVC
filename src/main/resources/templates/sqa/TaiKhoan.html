@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="Css/TaiKhoan.css">
+
+    <title>Phần mềm quản lí nhân viên hàng đầu Việt Nam</title>
+</head>
+
+<body>
+    <header class="shadow p-3 mb-4 bg-white rounded">
+        <div class="header2" style="margin-top: 5px;">
+            <a href="QLKH.html"><i class="fas fa-users"></i>Quản lí khách hàng</a>
+            <a href="GiaoDichKH.html"><i class="fas fa-shopping-basket"></i>Giao dịch khách hàng</a>
+            <div class="dropdown ms-5">
+                <div type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href=""><i class="fas fa-user-tie"></i>Tài khoản</a>
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="TaiKhoan.html"><i class="fas fa-users-cog"></i>Tài khoản của tôi</a></li>
+                    <li><a class="dropdown-item" href="login.html"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class=" taiKhoan row">
+            <div class="col-3" style="border-right: 1px solid rgb(214, 214, 214); height: 300px;">
+                <p><button class="item default" style="color: blue;">Thông tin tài khoản</button></p>
+                <p><button class="item select suaa">Sửa thông tin</button></p>
+                <p><button class="item select doimatkhauu">Đổi mật khẩu</button></p>
+            </div>
+            <div class="col-8 ms-5">
+                <div class="xem">
+                    <p> <img src="https://www.w3schools.com/howto/img_avatar.png" class="avatar me-2">
+                        <b>Thông tin nhân viên Trần Hữu C</b>
+                    </p>
+                    <p>Tên đăng nhập: <b>Tran C</b></p>
+                    <p>Giới tính: <b>Nam</b></p>
+                    <p>Số điện thoại: <b>090420435</b></p>
+                    <p>Email: <b>mnh822@gmail.com</b></p>
+                    <p>Địa chỉ: <b>Thị trấn Lim - Tiên Du - Bắc Ninh</b></p>
+                </div>
+
+
+                <div class="sua">
+                    <div class="row">
+                        <p class="col-3">Tên đăng nhập</p>
+                        <p class="col-9"><input class="form-control" type="text"></p>
+                    </div>
+                    <div class="row">
+                        <p class="col-3">Giới tính:</p>
+                        <p class="col-6">
+                            <input class="form-check-input" checked type="radio" name="gioiTinh" id="checkGioiTinh">
+                            <label for="checkGioiTinh">Nam</label>
+                            <input class="form-check-input" type="radio" name="gioiTinh" id="checkGioiTinh">
+                            <label for="checkGioiTinh">Nữ</label>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p class="col-3">Số điện thoại</p>
+                        <p class="col-9"><input class="form-control" type="text" value="42454362"></p>
+                    </div>
+                    <div class="row">
+                        <p class="col-3">Email</p>
+                        <p class="col-9"><input class="form-control" type="email" value="mnh822@gmail.com"></p>
+                    </div>
+                    <div class="row">
+                        <p class="col-3">Địa chỉ</p>
+                        <p class="col-9"><input class="form-control" type="email" value="Thị trấn Lim - Tiên Du - Bắc Ninh"></p>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <a href="TaiKhoan.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button></a>
+                        <a href="TaiKhoan.html"><button type="submit" class="btn btn-primary">Cập nhật</button></a>
+                    </div>
+                </div>
+                <div class="doimatkhau">
+                    <div class="row">
+                        <p class="col-3">Nhập mật khẩu cũ</p>
+                        <p class="col-9"><input class="form-control" type="text"></p>
+                    </div>
+                    <div class="row">
+                        <p class="col-3">Nhập mật khẩu mới</p>
+                        <p class="col-9"><input class="form-control" type="text"></p>
+                    </div>
+                    <div class="row">
+                        <p class="col-3">Xác nhận lại mật khẩu</p>
+                        <p class="col-9"><input class="form-control" type="text"></p>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <a href="TaiKhoan.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button></a>
+                        <a href="TaiKhoan.html"><button type="submit" class="btn btn-primary">Cập nhật</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- chân trang -->
+    <div class="footer mt-4">
+        <div class=footer-left>
+            <h5 class="footer-left-title">Cong ty ABC Việt Nam</h5>
+            <ul>
+                <li class="footer-left-item">Địa chỉ: Km10 - Nguyễn Trãi - Thanh Xuân - hà Nội</li>
+                <li class="footer-left-item">Số điện thoại: 0123456789</li>
+                <li class="footer-left-item">Email: ctyabcvietnamh@gmail.com</li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h5 class="footer-right-title">Google map</h5>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4083037682194!2d105.7818576144072!3d21.01634269357922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454ab43c0c4db%3A0xdb6effebd6991106!2zVMOyYSBuaMOgIEtlYW5nbmFtIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1632482368958!5m2!1svi!2s"
+                width="280" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+
+
+
+    <script src="http://code.jquery.com/jquery-1.10.2.js "></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js "></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/TaiKhoan.js"></script>
+</body>
+
+</html>

@@ -1,6 +1,5 @@
 package com.example.ltw_longptit.repo;
 
-import com.example.ltw_longptit.model.BacSi;
 import com.example.ltw_longptit.model.BenhNhan;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

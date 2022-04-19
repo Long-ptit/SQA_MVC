@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/QLKH.css">
+    <title>Quản lí khách hàng</title>
+</head>
+
+<body>
+    <header class="shadow p-3 mb-4 bg-white rounded">
+        <div class="header2" style="margin-top: 5px;">
+            <a href="QLKH.html"><i class="fas fa-users"></i>Quản lí khách hàng</a>
+            <a href="BanHang.html"><i class="fas fa-shopping-basket"></i>Bán hàng</a>
+            <div class="dropdown ms-5">
+                <div type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href=""><i class="fas fa-user-tie"></i>Tài khoản</a>
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="TaiKhoan.html"><i class="fas fa-users-cog"></i>Tài khoản của tôi</a></li>
+                    <li><a class="dropdown-item" href="login.html"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="boloc">
+        <div class="p-3">
+            <div class="input-group">
+                <b>Tìm kiếm theo số điện thoại:</b>
+                <div class="ms-2 form-outline">
+                    <input class="form-control" type="text" id="myInput" onkeyup="myFunction()" placeholder="Tìm kiếm ..." title="Type in a name" />
+                </div>
+
+                <button type="button" class="btn btn-primary">
+                  <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="p-3 ">
+            <a href="ThemKH.html">
+                <button class="btn btn-primary">
+                    <i class="fas fa-user-plus"></i>
+                    Thêm mới khách hàng
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="table-KH " id="myTable">
+        <table class="table table-hover">
+            <thead class="">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Họ và tên</th>
+                    <th scope="col">Số điện thoại</th>
+
+                    <th scope="col">Địa chỉ</th>
+                    <th scope="col">Giao dịch gần nhất</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Nguyễn Hữu Mừng</td>
+
+                    <td>9050353442</td>
+                    <td>Tiên Du - Bắc Ninh</td>
+                    <td>12-12-2020</td>
+                    <td><a name="" id="" class="btn btn-primary" href="BanHang.html" role="button">Chọn</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Trịnh Xuân Long</td>
+
+                    <td>34242132</td>
+                    <td>Ba Đình - Hà Nội</td>
+                    <td>12-12-2020</td>
+                    <td><a name="" id="" class="btn btn-primary" href="BanHang.html" role="button">Chọn</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Bùi Minh Công</td>
+
+                    <td>09434543535</td>
+                    <td>Thạch Thành - Thanh Hóa</td>
+                    <td>12-12-2020</td>
+                    <td><a name="" id="" class="btn btn-primary" href="BanHang.html" role="button">Chọn</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Ngô Xuân Tiến</td>
+
+                    <td>5456790999</td>
+                    <td>Thanh Miện - Hải Dương</td>
+                    <td>12-12-2020</td>
+                    <td><a name="" id="" class="btn btn-primary" href="BanHang.html" role="button">Chọn</a></td>
+                </tr>
+
+                <tr>
+
+                    <th scope="row">5</th>
+                    <td>Nguyễn Anh Tuấn</td>
+
+                    <td>45454545</td>
+                    <td>Tp.Nam Định - Nam Định</td>
+                    <td>12-12-2020</td>
+                    <td><a name="" id="" class="btn btn-primary" href="BanHang.html" role="button">Chọn</a></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- chân trang -->
+    <div class="footer mt-4">
+        <div class=footer-left>
+            <h5 class="footer-left-title">SQA nhóm 8</h5>
+            <ul>
+                <li class="footer-left-item">Địa chỉ: Km10 - Nguyễn Trãi - Thanh Xuân - hà Nội</li>
+                <li class="footer-left-item">Số điện thoại: 0123456789</li>
+                <li class="footer-left-item">Email: sqanhom8@gmail.com</li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h5 class="footer-right-title">Google map</h5>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4083037682194!2d105.7818576144072!3d21.01634269357922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454ab43c0c4db%3A0xdb6effebd6991106!2zVMOyYSBuaMOgIEtlYW5nbmFtIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1632482368958!5m2!1svi!2s"
+                width="280" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- script tìm KH theo sđt -->
+    <script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInputKH");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTableKH");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[1];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

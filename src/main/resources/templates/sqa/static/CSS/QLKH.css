@@ -1,0 +1,27 @@
+.table-KH {
+    margin: 0px 80px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgb(221, 223, 226);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+i {
+    cursor: pointer;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.boloc {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.boloc div .input-group {
+    align-items: center;
+}

@@ -1,0 +1,48 @@
+.formThemKH {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    align-content: center;
+    display: block;
+}
+
+.formThemKH,
+.formBanHang {
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgb(212, 209, 208);
+}
+
+.formBanHang {
+    text-align: center;
+    align-content: center;
+    display: block;
+}
+
+h5 {
+    margin-bottom: 20px;
+}
+
+.quaylaihoantat {
+    display: none;
+}
+
+.formThemGiaoDich {
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgb(173, 173, 173);
+    display: block;
+}
+
+.locKH {
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgb(173, 173, 173);
+    display: block;
+}
